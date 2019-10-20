@@ -1,0 +1,31 @@
+const images = {
+    logoFCCC: require('../assets/images/logoFCCC.png'),
+    //home: require('../Images/home.jpg'),
+    //iglesia: require('../Images/iglesia.jpg'),
+    pastores: require('../assets/images/Pastores3.jpg'),
+    // iglesia: require('../Images/iglesia.jpg'),
+    // iglesiaYmca: require('../Images/iglesiaYmca.jpg'),
+    // calendarImage: require('../Images/calendarScreen.jpg'),
+    // ninos: require('../Images/ninos.jpg'),
+    // ninos2: require('../Images/ninos2.jpg'),
+    // bautizo1: require('../Images/bautizo1.jpg'),
+    // bautizo2: require('../Images/bautizo2.jpg'),
+    // clase: require('../Images/clase.jpeg'),
+    // jovenes: require('../Images/jovenes.jpeg'),
+    // ministries: require('../Images/homePray.jpg'),
+    // findUs: require('../Images/GoogleMaps.jpg'),
+    // iconoPhone: require('../Images/Icons/icon-phone.png'),
+    // iconHeart: require('../Images/Icons/icon-heart.png'),
+    // iconBible: require('../Images/Icons/icon-bible.png'),
+    // give: require('../Images/give.jpg'),
+    // calendar: require('../Images/calendar.jpg'),
+    // prayerRequest: require('../Images/homeRequest.jpg'),
+    // churchIcon: require('../Images/Icons/church-icon.png'),
+    // calendarScreen: require('../Images/ninos.jpg'),
+    // findUsIcon: require('../Images/Icons/find-icon.png'),
+    // servicio: require('../Images/servicio.jpg'),
+    // iconEmail: require('../Images/Icons/icon-email.png'),
+}
+
+export default images;
+
