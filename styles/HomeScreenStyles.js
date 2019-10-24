@@ -6,8 +6,8 @@ export default StyleSheet.create({
   container: {
     //marginBottom: 36,
     //paddingTop: Metrics.section
-    marginBottom: Metrics.hp(5),
-    marginTop: Metrics.hp(6)
+    marginBottom: Metrics.hp(1),
+    //marginTop: Metrics.hp(1)
   },
   logo: {
     height: Metrics.hp(43),
