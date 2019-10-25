@@ -15,7 +15,7 @@ const HomeScreen = props => {
   }
   
   openFindUs = () => {
-    props.navigation.navigate('PluginExamplesScreen')
+    props.navigation.navigate('FindUsScreen')
   }
   
   openPrayer = () => {
@@ -28,11 +28,11 @@ const HomeScreen = props => {
   }
   
   openCalendar = () => {
-    props.navigation.navigate('DeviceInfoScreen')
+    props.navigation.navigate('CalendarScreen')
   }
   
-  openFaq = () => {
-    props.navigation.navigate('FaqScreen')
+  openGallery = () => {
+    props.navigation.navigate('GalleryScreen')
   }
 
     return (
@@ -60,7 +60,7 @@ const HomeScreen = props => {
           </View>
           <View style={styles.buttonsContainer}>
             <ButtonBox onPress={this.openPrayer} style={styles.apiButton} image={Images.prayerRequest} text='Pedir Oración' />
-            <ButtonBox onPress={this.openFaq} style={styles.usageButton} image={Images.iglesia} text='Galeria' />
+            <ButtonBox onPress={this.openGallery} style={styles.usageButton} image={Images.iglesia} text='Galeria' />
           </View>
         </ScrollView>
         <View style={styles.banner}>
