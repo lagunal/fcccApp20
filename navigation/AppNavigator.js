@@ -9,15 +9,41 @@ import CalendarScreen from '../screens/CalendarScreen';
 import GalleryScreen from '../screens/GalleryScreen';
 import GalleryDetailsScreen from '../screens/GalleryDetailsScreen';
 
+import { Colors } from '../theme';
+
 const MainNavigator = createStackNavigator({
-    LaunchSCreen: LaunchScreen,
+    LaunchSCreen: { 
+        screen: LaunchScreen,
+        navigationOptions: () => ({
+            headerStyle: {
+                backgroundColor: Colors.transparent,
+            },
+            headerTransparent: 'true'
+          }),
+    },
     HomeScreen: HomeScreen,
     AboutUsScreen: AboutUsScreen,
     FindUsScreen: FindUsScreen,
     CalendarScreen: CalendarScreen,
     GalleryScreen: GalleryScreen,
     GalleryDetailsScreen: GalleryDetailsScreen
-});
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+              backgroundColor: Colors.blue,
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          },
+    }
+
+
+);
+
+
 
 export default createAppContainer(MainNavigator);
 

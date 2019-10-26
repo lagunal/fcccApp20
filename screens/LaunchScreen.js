@@ -40,9 +40,6 @@ const LaunchScreen = props => {
     )
 }
 
-LaunchScreen.navigationOptions = {
-    headerTransparent: 'true'
-}
 
 export default LaunchScreen;
 

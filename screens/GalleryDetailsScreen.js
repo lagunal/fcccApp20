@@ -1,22 +1,13 @@
 import React from 'react'
 import { View, ScrollView, Image, TouchableOpacity, StyleSheet } from 'react-native'
 
-import { Images, Colors, Metrics } from '../theme';
+import { Colors, Metrics } from '../theme';
 
-class GalleryDetailsScreen extends React.Component {
-  constructor(props) {
-    super(props);
+const GalleryDetailsScreen = props => {
    
-    this.state = {
-      imageuri: this.props.navigation.getParam('src'),
-    };
+    const imageuri = props.navigation.getParam('src');
 
-  }
-
-  render () {
-        
-              return (
-                    
+    return (
                   <View style={stylesGallery.modelStyle}  >
                     <ScrollView style={stylesGallery.scrollStyle} minimumZoomScale={1} maximumZoomScale={3}>
                         <Image
@@ -26,25 +17,13 @@ class GalleryDetailsScreen extends React.Component {
                         //imageIndex={0}
                         //isVisible={'true'}
                         //renderFooter={(currentImage) => (<View><Text>My footer</Text></View>)}
-                        source={this.state.imageuri}
+                        source={imageuri}
                         //resizeMode='contain'
                         />
                     </ScrollView>
-                    <TouchableOpacity onPress={() => {
-                                          this.props.navigation.goBack();
-                                        }}
-                      style={{
-                      position: 'absolute',
-                      paddingTop: 30,
-                      paddingHorizontal: 5,
-                      zIndex: 10
-                        }}>
-                          <Image source={Images.backButton} />
-                    </TouchableOpacity>
-                    </View>
+                  </View>
               );
     }
-}
 
 export default GalleryDetailsScreen;
 
