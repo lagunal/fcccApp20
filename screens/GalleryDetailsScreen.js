@@ -32,10 +32,6 @@ const stylesGallery = StyleSheet.create({
     flex: 1,
     marginTop: 30,
   },
-  image: {
-    height: 120,
-    width: '100%',
-  },
   fullImageStyle: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -52,11 +48,5 @@ const stylesGallery = StyleSheet.create({
     //alignItems: 'center',
     backgroundColor: Colors.blue,
   },
-  closeButtonStyle: {
-    width: 25,
-    height: 25,
-    top: 9,
-    right: 9,
-    position: 'absolute',
-  },
+ 
 });

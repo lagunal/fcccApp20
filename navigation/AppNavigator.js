@@ -1,5 +1,6 @@
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import LaunchScreen from '../screens/LaunchScreen';
 import HomeScreen from '../screens/HomeScreen';
@@ -34,15 +35,18 @@ const MainNavigator = createStackNavigator({
               backgroundColor: Colors.blue,
             },
             headerTintColor: '#fff',
-            headerTitleStyle: {
-              fontWeight: 'bold',
-            },
+            // headerTitleStyle: {
+            //   fontWeight: 'bold',
+            // },
           },
     }
 
 
 );
 
+const TabNavigator = createBottomTabNavigator({
+    
+});
 
 
 export default createAppContainer(MainNavigator);

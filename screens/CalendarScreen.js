@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, ScrollView, Text, Image, NetInfo } from 'react-native'
+import { View, ScrollView, Text, Image } from 'react-native'
 import { Tile } from 'react-native-elements'
 
 import { Images } from '../theme';

@@ -24,5 +24,9 @@ export default StyleSheet.create({
     borderColor: Colors.border,
     padding: Metrics.baseMargin,
     marginVertical: 20
-  }
+  },
+  image: {
+    height: 120,
+    width: '100%',
+  },
 })
