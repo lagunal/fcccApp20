@@ -3,7 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 
-import MainNavigator from './navigation/AppNavigator';
+import TabNavigator from './navigation/AppNavigator';
+import LaunchScreen from './screens/LaunchScreen';
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -24,7 +25,8 @@ export default function App() {
     )
   }
 
-  return <MainNavigator />;
+  return <TabNavigator />;
+  //return <LaunchScreen />;
 }
 
 const styles = StyleSheet.create({

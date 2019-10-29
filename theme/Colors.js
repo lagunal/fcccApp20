@@ -13,6 +13,7 @@ const colors = {
     border: '#483F53',
     text: '#E0D7E5',
     blue: '#2651a8',
+    darkblue: '#00088E',
     black: '#000'
   }
   

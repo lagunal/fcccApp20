@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
 
 import RoundedButton from '../components/RoundedButton';
+import MainNavigator from '../navigation/AppNavigator';
 import { Images }  from '../theme';
 import styles from '../styles/LaunchScreenStyles';
 
@@ -10,7 +11,8 @@ import styles from '../styles/LaunchScreenStyles';
 const LaunchScreen = props => {
 
     const handleButton = () => {
-        props.navigation.navigate('HomeScreen');
+        //props.navigation.navigate('HomeScreen');
+        return <MainNavigator />
     }
 
     return (
