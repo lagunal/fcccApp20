@@ -6,7 +6,7 @@ export default StyleSheet.create({
   container: {
     //marginBottom: 36,
     //paddingTop: Metrics.section
-    marginBottom: Metrics.hp(1),
+    marginBottom: Metrics.hp(5),
     //marginTop: Metrics.hp(1)
   },
   logo: {
@@ -55,7 +55,7 @@ export default StyleSheet.create({
   banner: {
     position: 'absolute',
     width: Metrics.screenWidth,
-    backgroundColor: Colors.banner,
+    backgroundColor: Colors.blue,
     justifyContent: 'center',
     alignItems: 'center',
     bottom: 0,

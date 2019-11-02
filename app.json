@@ -24,7 +24,17 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "org.reactjs.native.example.fcccApp2",
+      "buildNumber": "5",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "org.reactjs.native.example.fcccApp2",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-transp.png"
+      },
+      "versionCode": 2,
+      "permissions": []
     }
   }
 }

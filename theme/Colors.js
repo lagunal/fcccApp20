@@ -13,8 +13,9 @@ const colors = {
     border: '#483F53',
     text: '#E0D7E5',
     blue: '#2651a8',
-    darkblue: '#00088E',
-    black: '#000'
+    darkblue: '#0cd1e8',
+    black: '#000',
+    banner: '#5F3E63',
   }
   
   export default colors
