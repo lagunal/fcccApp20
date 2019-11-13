@@ -17,32 +17,36 @@ export default StyleSheet.create({
   },
   buttonsContainer: {
     flexDirection: 'row',
-    flex: 1
+    flex: 1,
+    width: Metrics.wp(100)
   },
   centered: {
     alignItems: 'center',
   },
-  componentButton: {
+  componentButton2: {
     borderColor: Colors.border,
     borderTopWidth: 1,
     borderRightWidth: 1,
-    borderBottomWidth: 1
+    borderBottomWidth: 1,
+    //padding: 20,
+    borderRadius: 20,
+    margin: 10
   },
-  apiButton: {
-    borderColor: Colors.border,
-    borderRightWidth: 1,
-    borderBottomWidth: 1
-  },
-  usageButton: {
-    borderColor: Colors.border,
-    borderTopWidth: 1,
-    borderBottomWidth: 1
-  },
-  deviceButton: {
-    borderColor: Colors.border,
-    borderRightWidth: 1,
-    borderTopWidth: 1
-  },
+  // apiButton: {
+  //   borderColor: Colors.border,
+  //   borderRightWidth: 1,
+  //   borderBottomWidth: 1
+  // },
+  // usageButton: {
+  //   borderColor: Colors.border,
+  //   borderTopWidth: 1,
+  //   borderBottomWidth: 1
+  // },
+  // deviceButton: {
+  //   borderColor: Colors.border,
+  //   borderRightWidth: 1,
+  //   borderTopWidth: 1
+  // },
   sectionText: {
     textAlign: 'center',
     fontFamily: Fonts.base,
