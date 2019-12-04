@@ -1,8 +1,7 @@
 import React from 'react'
-import { TouchableOpacity, Text } from 'react-native'
+import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
-import styles from './styles/RoundedButtonStyles';
-
+import { Fonts, Colors, Metrics } from '../theme';
 
 
 const RoundedButton = (props) => {
@@ -18,5 +17,23 @@ const RoundedButton = (props) => {
       </TouchableOpacity>
     )
 }
+
+const styles = StyleSheet.create({
+  button: {
+    height: 45,
+    borderRadius: 5,
+    marginHorizontal: Metrics.section,
+    marginVertical: Metrics.baseMargin,
+    backgroundColor: Colors.blue,
+    justifyContent: 'center'
+  },
+  buttonText: {
+    color: Colors.snow,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: Fonts.size.medium,
+    marginVertical: Metrics.baseMargin
+  }
+})
 
 export default RoundedButton;

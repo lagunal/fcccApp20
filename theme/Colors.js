@@ -16,6 +16,7 @@ const colors = {
     darkblue: '#0cd1e8',
     black: '#000',
     banner: '#5F3E63',
+    backgroundScreen: '#0cd1e8'
   }
   
   export default colors

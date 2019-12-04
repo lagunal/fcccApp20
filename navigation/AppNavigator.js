@@ -13,6 +13,7 @@ import FindUsScreen from '../screens/FindUsScreen';
 import CalendarScreen from '../screens/CalendarScreen';
 import GalleryScreen from '../screens/GalleryScreen';
 import GalleryDetailsScreen from '../screens/GalleryDetailsScreen';
+import EventsScreen from '../screens/EventsScreen';
 
 import { Colors } from '../theme';
 
@@ -23,7 +24,7 @@ const MainNavigator = createStackNavigator({
             headerStyle: {
                 backgroundColor: Colors.transparent,
             },
-            headerTransparent: 'true'
+            headerTransparent: 'true',
           }),
     },
     HomeScreen: HomeScreen,
@@ -48,16 +49,40 @@ const MainNavigator = createStackNavigator({
 
 );
 
+MainNavigator.navigationOptions = ({ navigation }) => {
+    let tabBarVisible = false;
+    if (navigation.state.index > 0) {
+      tabBarVisible = true;
+    }
+  
+    return {
+      tabBarVisible,
+    };
+};
+
+const EventsNavigator = createStackNavigator({
+    EventsScreen: EventsScreen
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+            backgroundColor: Colors.blue,
+            },
+            headerTintColor: Colors.snow,
+        },
+    }
+)
+
 const TabScreenConfig = {
     Home: { screen: MainNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-home' size={25} color={tabInfo.tintColor} /> }
     }},
-    Events: { screen: FindUsScreen, navigationOptions: { 
+    Events: { screen: EventsNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-calendar' size={25} color={tabInfo.tintColor} /> }
     }},
-    Ofrendar: { screen: FindUsScreen, navigationOptions: { 
-        tabBarIcon: (tabInfo) => { return <Ionicons name='ios-heart' size={25} color={tabInfo.tintColor} /> }
-    }}
+    // Ofrendar: { screen: FindUsScreen, navigationOptions: { 
+    //     tabBarIcon: (tabInfo) => { return <Ionicons name='ios-heart' size={25} color={tabInfo.tintColor} /> }
+    // }}
 };
 
 const TabNavigator = 
@@ -70,13 +95,13 @@ const TabNavigator =
         tabBarOptions: {
             activeTintColor: Colors.snow,
             style: {
-                backgroundColor: Colors.darkblue,
+                backgroundColor: Colors.blue,
             },
         }
     });
 
 
-export default createAppContainer(MainNavigator);
+export default createAppContainer(TabNavigator);
 
 
 

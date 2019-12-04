@@ -2,7 +2,7 @@ import React from 'react'
 import { View, ScrollView, Text, Image } from 'react-native'
 import { Tile } from 'react-native-elements'
 
-import { Images } from '../theme';
+import { Images, Metrics } from '../theme';
 import styles from '../styles/CalendarScreenStyles';
 
 class CalendarScreen extends React.Component {
@@ -80,18 +80,22 @@ class CalendarScreen extends React.Component {
 
         <ScrollView style={styles.container}>
           <View style={styles.scrollContent}>
-   
-                <Tile
-                  imageSrc={Images.calendarScreen}
-                  imageContainerStyle={styles.logo}
-                  title="Calendario Iglesia"
-                  containerStyle={styles.tile}
-                  //titleStyle={styles.tileTextHomeOptions}
-                  featured
-                  //caption="Ministries"
-                  //captionStyle={styles.h4}
-                />
-   
+                <View style={{alignSelf: 'center'}}>
+                        <Tile
+                          imageSrc={Images.calendarScreen}
+                          imageContainerStyle={{width: Metrics.wp(95), height: Metrics.hp(30) }} 
+                          title="Calendario Iglesia"
+                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
+                            borderBottomLeftRadius: 10,
+                            borderBottomRightRadius: 10,
+                            borderTopRightRadius: 10,
+                            borderTopLeftRadius: 10,
+                            overflow: 'hidden'
+                          }}
+                          titleStyle={styles.tileTextHomeOptions}
+                          featured
+                        />
+                </View>
             <View>
               {this.renderCard(this.state.calendarData)}
             </View>
