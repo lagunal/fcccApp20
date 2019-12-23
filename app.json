@@ -9,7 +9,7 @@
       "android",
       "web"
     ],
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -25,7 +25,7 @@
     ],
     "ios": {
       "bundleIdentifier": "org.reactjs.native.example.fcccApp2",
-      "buildNumber": "5",
+      "buildNumber": "1",
       "supportsTablet": true
     },
     "android": {
@@ -33,7 +33,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo-transp.png"
       },
-      "versionCode": 2,
+      "versionCode": 3,
       "permissions": []
     }
   }

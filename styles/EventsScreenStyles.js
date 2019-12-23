@@ -68,10 +68,17 @@ export default StyleSheet.create({
     alignSelf: 'center',
     //textAlignVertical: 'bottom'
   },
-  rowMenu: {
+  row: {
+    alignSelf: 'center',
+    marginTop: Metrics.hp(2),
     //backgroundColor: 'yellow', 
-    paddingLeft: Metrics.wp(3), 
-    paddingVertical: Metrics.hp(2), 
-    paddingRight: Metrics.wp(1)
+    //paddingLeft: Metrics.wp(3), 
+    //paddingVertical: Metrics.hp(2), 
+    //paddingRight: Metrics.wp(1)
+  },
+  imageContainer: {
+    width: Metrics.wp(95), 
+    height: Metrics.hp(30),
+    //resizeMode: 'cover',
   }
 })

@@ -1,46 +1,43 @@
 [ {
-  "info" : "Escuela Bíblica. Dir. Damas 7:00 PM",
-  "title" : "Viernes 1"
+  "info" : "Servicio de Oración 7:00 PM",
+  "title" : "Miercoles 4"
+}, {
+  "info" : "Escuela Bíblica. Dir. Familia Pastoral. 7:00 PM",
+  "title" : "Viernes 6"
 }, {
   "info" : "Servicio de Adoración 10:00 AM",
-  "title" : "Domingo 3"
+  "title" : "Domingo 8"
 }, {
-  "info" : "Servicio de Oración 7:00 PM / E. Capacitación 6:30 PM",
-  "title" : "Miercoles 6"
+  "info" : "Servicio de Oración 7:00 PM",
+  "title" : "Miercoles 11"
 }, {
-  "info" : "Escuela Bíblica. Dir. Niños 7:00 PM / VIGILIA DAMAS 9:30 PM - 12 AM",
-  "title" : "Viernes 8"
-}, {
-  "info" : "Servicio de Adoración 10:00 AM",
-  "title" : "Domingo 10"
-}, {
-  "info" : "Servicio de Oración 7 PM / E. Capacitación 6:30 PM",
-  "title" : "Miercoles 13"
-}, {
-  "info" : "Escuela Bíblica. Dir. Caballeros 7:00 PM",
-  "title" : "Viernes 15"
+  "info" : "Escuela Bíblica. Dir. Familia Montalvo. 7:00 PM",
+  "title" : "Viernes 13"
 }, {
   "info" : "Servicio de Adoración 10:00 AM",
-  "title" : "Domingo 17"
+  "title" : "Domingo 15"
 }, {
-  "info" : "Café con mi pareja 6:30 - 7:30 PM / Youth Service 7 PM",
-  "title" : "Lunes 18"
+  "info" : "Servicio de Oración 7:00 PM",
+  "title" : "Miercoles 18"
 }, {
-  "info" : "Servicio de Oración 7 PM / E. Capacitación 6:30 PM",
-  "title" : "Miercoles 20"
+  "info" : "DRAMA NAVIDEÑO: EL REGALO PERFECTO. 7:00 PM",
+  "title" : "Viernes 20"
 }, {
-  "info" : "Escuela Bíblica. Dir. Familia Torres 7:00 PM",
-  "title" : "Viernes 22"
-}, {
-  "info" : "MATRIMONIOS Cosechando Juntos 9:30 PM",
-  "title" : "Sábado 23"
+  "info" : "CENA NAVIDEÑA. 5:30 PM",
+  "title" : "Sabado 21"
 }, {
   "info" : "Servicio de Adoración 10:00 AM",
-  "title" : "Domingo 24"
+  "title" : "Domingo 22"
 }, {
-  "info" : "Servicio de Oración 7:00 PM / E. Capacitación 6:30 PM",
+  "info" : "NAVIDAD",
+  "title" : "Miercoles 25"
+}, {
+  "info" : "Escuela Bíblica. Dir. Goerge y Lucy. 7:00 PM",
   "title" : "Viernes 27"
 }, {
-  "info" : "Escuela Bíblica. Dir. Familia Saúl & Iris 7:00 PM",
-  "title" : "Viernes 29"
+  "info" : "Servicio de Adoración 10:00 AM",
+  "title" : "Domingo 29"
+}, {
+  "info" : "DESPEDIDA DE AÑO 10:00 PM",
+  "title" : "Martes 31"
 } ]

@@ -26,6 +26,9 @@ const images = {
     servicio: require('../assets/images/servicio.jpg'),
     iconEmail: require('../assets/images/icon-email.png'),
     background: require('../assets/images/BG.png'),
+    regaloPerfecto: require('../assets/images/Drama.jpg'),
+    boss: require('../assets/images/Boss.jpg'),
+    maelo: require('../assets/images/maelo.jpg'),
 }
 
 export default images;
