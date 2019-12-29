@@ -38,94 +38,20 @@ const EventsScreen = props => {
                           //caption=""
                           //captionStyle={styles.h4}
                           />
+                
             </Row>
 
             <Row style={styles.row}>
-              <View>
-                  <Tile
-                          imageSrc={Images.regaloPerfecto}
-                          imageContainerStyle={styles.imageContainer} 
-                          //title="Eventos Especiales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                          //caption=""
-                          //captionStyle={styles.h4}
-                          />
+              <View style={styles.imageContainer}>
+                    <Image source={Images.bannerAyuno} style={styles.imageContainer} resizeMode='stretch' />        
               </View>
             </Row>
 
             <Row style={styles.row}>
-                  <Tile
-                          imageSrc={Images.maelo}
-                          imageContainerStyle={styles.imageContainer} 
-                          //="Eventos Especiales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                          //caption=""
-                          //captionStyle={styles.h4}
-                          />
+              <View style={styles.imageContainer}>
+                    <Image source={Images.boss} style={styles.imageContainer} resizeMode='stretch' />        
+              </View>
             </Row>
-
-            <Row style={styles.row}>
-                  <Tile
-                          imageSrc={Images.boss}
-                          imageContainerStyle={styles.imageContainer} 
-                          //="Eventos Especiales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                          //caption=""
-                          //captionStyle={styles.h4}
-                          />
-            </Row>
-
-            {/* <Row style={styles.rowMenu}>
-              <Col>
-                  <ButtonBox onPress={this.openAbout}  image={Images.ministries} text='Acerca de nosotros' />
-              </Col>
-              <Col>
-                  <ButtonBox onPress={this.openFindUs}  image={Images.findUs} text='Encuéntranos' />
-              </Col>
-            </Row>
-
-            <Row style={styles.rowMenu}
-            >
-              <Col>
-                 <ButtonBox onPress={this.openCalendar}  image={Images.calendar} text='Calendario' />
-              </Col>
-              <Col>
-                   <ButtonBox onPress={this.openGive}  image={Images.give} text='Ofrendar' />
-              </Col>
-            </Row>
-            <Row style={styles.rowMenu}
-            >
-              <Col>
-                   <ButtonBox onPress={this.openPrayer}  image={Images.prayerRequest} text='Pedir Oración' />
-              </Col>
-              <Col>
-                    <ButtonBox onPress={this.openGallery}  image={Images.iglesia} text='Galeria' />
-              </Col>
-            </Row>   */}
      
         </Grid>
       </ScrollView>

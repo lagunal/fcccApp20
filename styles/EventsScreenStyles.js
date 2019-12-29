@@ -80,5 +80,10 @@ export default StyleSheet.create({
     width: Metrics.wp(95), 
     height: Metrics.hp(30),
     //resizeMode: 'cover',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
+    overflow: 'hidden'
   }
 })

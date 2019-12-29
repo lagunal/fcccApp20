@@ -29,6 +29,7 @@ const images = {
     regaloPerfecto: require('../assets/images/Drama.jpg'),
     boss: require('../assets/images/Boss.jpg'),
     maelo: require('../assets/images/maelo.jpg'),
+    bannerAyuno: require('../assets/images/FCCCBannerAyuno.png'),
 }
 
 export default images;

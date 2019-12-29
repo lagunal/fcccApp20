@@ -33,32 +33,35 @@ export default StyleSheet.create({
   },
   rowContainer: {
     flexDirection: 'row',
-    borderColor: Colors.windowTint,
+    borderColor: Colors.snow,
     borderWidth: 0.5,
     borderRadius: 2,
     //width: Metrics.wp(100),
     //marginLeft: 0
-    marginHorizontal: Metrics.baseMargin
+    marginHorizontal: Metrics.baseMargin,
+    paddingVertical: Metrics.hp(1)
   },
   rowLabelContainer: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: Colors.snow
+    backgroundColor: Colors.blue
   },
   rowLabel: {
     fontWeight: 'bold',
     fontSize: Fonts.size.medium,
     marginVertical: Metrics.baseMargin,
-    marginLeft: Metrics.baseMargin
+    marginLeft: Metrics.baseMargin,
+    color: Colors.snow
   },
   rowInfoContainer: {
     flex: 2,
     justifyContent: 'center',
-    backgroundColor: Colors.silver
+    backgroundColor: Colors.blue
   },
   rowInfo: {
     fontSize: Fonts.size.regular,
-    margin: Metrics.baseMargin
+    margin: Metrics.baseMargin,
+    color: Colors.snow
   },
   logo: {
     height: Metrics.hp(53),

@@ -66,7 +66,7 @@ const EventsNavigator = createStackNavigator({
     {
         defaultNavigationOptions: {
             headerStyle: {
-            backgroundColor: Colors.blue,
+                backgroundColor: Colors.blue,
             },
             headerTintColor: Colors.snow,
         },
@@ -80,7 +80,7 @@ const TabScreenConfig = {
     Events: { screen: EventsNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-calendar' size={25} color={tabInfo.tintColor} /> }
     }},
-    // Ofrendar: { screen: FindUsScreen, navigationOptions: { 
+    // Ayuno: { screen: FindUsScreen, navigationOptions: { 
     //     tabBarIcon: (tabInfo) => { return <Ionicons name='ios-heart' size={25} color={tabInfo.tintColor} /> }
     // }}
 };
