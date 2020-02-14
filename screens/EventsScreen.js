@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, Linking, FlatList } from 'react-native';
+import { View, Text, ScrollView, Image, Linking, FlatList, TouchableOpacity } from 'react-native';
 import { Tile } from 'react-native-elements'
 import { Col, Row, Grid } from "react-native-easy-grid";
 
@@ -10,23 +10,23 @@ import ButtonBox from '../components/ButtonBox';
 import styles from '../styles/EventsScreenStyles';
 
 const EventsScreen = props => {
-//   openAbout = () => {
-//     props.navigation.navigate('AboutUsScreen')
-//   }
+  // openScreen = () => {
+  //   props.navigation.navigate('AyunoScreen')
+  // }
   
 
 
     return (
       <View style={styles.mainContainer}>
              {/* <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' /> */}
-      <ScrollView showsVerticalScrollIndicator={false} bounces={false} style={styles.container}>
+      <ScrollView minimumZoomScale={1} maximumZoomScale={3} showsVerticalScrollIndicator={false} bounces={false} style={styles.container}>
       <Grid>
-            <Row style={{alignSelf: 'center'}}>
+            {/* <Row style={{alignSelf: 'center'}}>
                   <Tile
                           imageSrc={Images.calendar}
                           imageContainerStyle={styles.imageContainer} 
-                          title="Eventos Especiales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
+                          //title="Eventos Especiales"
+                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(20),
                             borderBottomLeftRadius: 10,
                             borderBottomRightRadius: 10,
                             borderTopRightRadius: 10,
@@ -39,17 +39,21 @@ const EventsScreen = props => {
                           //captionStyle={styles.h4}
                           />
                 
-            </Row>
+            </Row> */}
 
-            <Row style={styles.row}>
-              <View style={styles.imageContainer}>
-                    <Image source={Images.bannerAyuno} style={styles.imageContainer} resizeMode='stretch' />        
-              </View>
-            </Row>
+            {/* <Row style={styles.row}>
+              <TouchableOpacity onPress={openScreen} style={styles.imageContainer}>
+                    <ScrollView minimumZoomScale={1} maximumZoomScale={3}>
+                      <Image source={Images.bannerAyuno} style={styles.imageContainer} resizeMode='stretch' />    
+                    </ScrollView>    
+              </TouchableOpacity>
+            </Row> */}
 
-            <Row style={styles.row}>
+            <Row style={{alignSelf: 'center'}}>
               <View style={styles.imageContainer}>
-                    <Image source={Images.boss} style={styles.imageContainer} resizeMode='stretch' />        
+                    {/* <ScrollView minimumZoomScale={1} maximumZoomScale={3}> */}
+                        <Image source={Images.cafeconmipareja} style={styles.imageContainer} resizeMode='stretch' />  
+                    {/* </ScrollView>       */}
               </View>
             </Row>
      

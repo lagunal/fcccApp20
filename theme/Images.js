@@ -30,6 +30,10 @@ const images = {
     boss: require('../assets/images/Boss.jpg'),
     maelo: require('../assets/images/maelo.jpg'),
     bannerAyuno: require('../assets/images/FCCCBannerAyuno.png'),
+    imagenAyuno1: require('../assets/images/ayuno1.jpg'),
+    mensajesPastorales: require('../assets/images/MensajesPastorales.png'),
+    cafeconmipareja: require('../assets/images/cafeconmipareja.png'),
+    Diosessoberano: require('../assets/images/Diosessoberano.jpg'),
 }
 
 export default images;

@@ -14,6 +14,8 @@ import CalendarScreen from '../screens/CalendarScreen';
 import GalleryScreen from '../screens/GalleryScreen';
 import GalleryDetailsScreen from '../screens/GalleryDetailsScreen';
 import EventsScreen from '../screens/EventsScreen';
+import MessagesScreen from '../screens/MessagesScreen';
+import MessagesDetailScreen from '../screens/MessagesDetailsScreen';
 
 import { Colors } from '../theme';
 
@@ -61,7 +63,21 @@ MainNavigator.navigationOptions = ({ navigation }) => {
 };
 
 const EventsNavigator = createStackNavigator({
-    EventsScreen: EventsScreen
+    EventsScreen: EventsScreen,
+    },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: Colors.blue,
+            },
+            headerTintColor: Colors.snow,
+        },
+    }
+)
+
+const MessagesNavigator = createStackNavigator({
+    MessagesScreen: MessagesScreen,
+    MessagesDetailScreen: MessagesDetailScreen
     },
     {
         defaultNavigationOptions: {
@@ -80,9 +96,9 @@ const TabScreenConfig = {
     Events: { screen: EventsNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-calendar' size={25} color={tabInfo.tintColor} /> }
     }},
-    // Ayuno: { screen: FindUsScreen, navigationOptions: { 
-    //     tabBarIcon: (tabInfo) => { return <Ionicons name='ios-heart' size={25} color={tabInfo.tintColor} /> }
-    // }}
+    Predicas: { screen: MessagesNavigator, navigationOptions: { 
+        tabBarIcon: (tabInfo) => { return <Ionicons name='ios-mic' size={25} color={tabInfo.tintColor} /> }
+    }}
 };
 
 const TabNavigator = 

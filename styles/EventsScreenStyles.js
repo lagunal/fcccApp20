@@ -76,9 +76,28 @@ export default StyleSheet.create({
     //paddingVertical: Metrics.hp(2), 
     //paddingRight: Metrics.wp(1)
   },
+  rowMessages: {
+    alignSelf: 'center',
+    marginTop: Metrics.hp(2),
+    //height: Metrics.hp(1)
+    //backgroundColor: 'yellow', 
+    //paddingLeft: Metrics.wp(3), 
+    //paddingVertical: Metrics.hp(2), 
+    //paddingRight: Metrics.wp(1)
+  },
   imageContainer: {
     width: Metrics.wp(95), 
     height: Metrics.hp(30),
+    //resizeMode: 'cover',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
+    overflow: 'hidden'
+  },
+  imageAyunoContainer: {
+    width: Metrics.wp(95), 
+    height: Metrics.hp(15),
     //resizeMode: 'cover',
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
