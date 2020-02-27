@@ -8,7 +8,9 @@ export default StyleSheet.create({
   },
   sectionHeader: {
     ...ApplicationStyles.darkLabel,
-    paddingTop: 50
+    paddingTop: 50,
+    fontSize: Metrics.wp(6),
+    textAlign: 'center'
   },
   cardTitle: {
     alignSelf: 'center',
@@ -49,9 +51,15 @@ export default StyleSheet.create({
   rowLabel: {
     fontWeight: 'bold',
     fontSize: Fonts.size.medium,
-    marginVertical: Metrics.baseMargin,
-    marginLeft: Metrics.baseMargin,
+    //marginVertical: Metrics.baseMargin,
+    marginLeft: Metrics.wp(4),
     color: Colors.snow
+  },
+  number: {
+    fontSize: Metrics.hp(6),
+    fontWeight: 'bold',
+    color: Colors.snow,
+    marginLeft: Metrics.wp(4)
   },
   rowInfoContainer: {
     flex: 2,

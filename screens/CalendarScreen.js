@@ -59,12 +59,14 @@ class CalendarScreen extends React.Component {
 
   renderRows (rowData) {
     return rowData.map((cell) => {
-      const {title, info} = cell
+      const {info, dia, fecha} = cell
       return (
-        <View key={title} style={styles.rowContainer}>
+        <View key={fecha} style={styles.rowContainer}>
           <View style={styles.rowLabelContainer}>
-            <Text style={styles.rowLabel}>{title}</Text>
+            <Text style={styles.number}>{fecha}</Text>
+            <Text style={styles.rowLabel}>{dia}</Text>
           </View>
+
           <View style={styles.rowInfoContainer}>
             <Text style={styles.rowInfo}>{info}</Text>
           </View>

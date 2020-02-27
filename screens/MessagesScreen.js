@@ -14,11 +14,15 @@ import styles from '../styles/EventsScreenStyles';
 
 const MessagesScreen = props => {
   openDetail1 = () => {
-    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/predica1.mp3?alt=media&token=d08edee9-e569-45f4-aa9f-dc25a6cba9ed', 
+    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PredicaDiosEsSoberano.mp3?alt=media&token=5133570f-ad91-42e2-bd27-a1fcbb4a7227', 
                                                         'nameMedia': 'Dios es Soberano' 
                                                       })
   }
-
+  openDetail2 = () => {
+    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/seaLaLuz.mp3?alt=media&token=c79d4afd-87d5-4960-bc2a-354e85e3aff4', 
+                                                        'nameMedia': 'Sea La Luz' 
+                                                      })
+  }
   // async componentDidMount () {
   //   const soundObject = new Audio.Sound();
   //   try {
@@ -36,22 +40,6 @@ const MessagesScreen = props => {
       <ScrollView showsVerticalScrollIndicator={false} bounces={false} style={styles.container}>
       <Grid>
             <Row style={{alignSelf: 'center'}}>
-                  {/* <Tile
-                          imageSrc={Images.mensajesPastorales}
-                          imageContainerStyle={styles.imageContainer} 
-                          //title="Mensajes Pastorales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                          //caption=""
-                          //captionStyle={styles.h4}
-                          /> */}
                 <View style={styles.imageContainer}>
                     <Image source={Images.mensajesPastorales} style={styles.imageContainer} resizeMode='stretch' />        
                 </View>
@@ -60,12 +48,14 @@ const MessagesScreen = props => {
 
             <Row style={styles.rowMessages}>
               <TouchableOpacity onPress={openDetail1} style={styles.imageAyunoContainer} >
-                  {/* <ScrollView minimumZoomScale={1} maximumZoomScale={3}> */}
                     <Image source={Images.Diosessoberano} style={styles.imageAyunoContainer} resizeMode='stretch' />        
-                  {/* </ScrollView> */}
               </TouchableOpacity>
             </Row>
-
+            <Row style={styles.rowMessages}>
+              <TouchableOpacity onPress={openDetail2} style={styles.imageAyunoContainer} >            
+                    <Image source={Images.seaLaLuz} style={styles.imageAyunoContainer} resizeMode='stretch' />        
+              </TouchableOpacity>
+            </Row>
        
      
         </Grid>

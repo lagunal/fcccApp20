@@ -34,6 +34,8 @@ const images = {
     mensajesPastorales: require('../assets/images/MensajesPastorales.png'),
     cafeconmipareja: require('../assets/images/cafeconmipareja.png'),
     Diosessoberano: require('../assets/images/Diosessoberano.jpg'),
+    seaLaLuz: require('../assets/images/seaLaLuz.png'),
+    movieLikeArrows: require('../assets/images/movieLikeArrows.jpg'),
 }
 
 export default images;

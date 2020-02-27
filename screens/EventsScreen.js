@@ -21,25 +21,6 @@ const EventsScreen = props => {
              {/* <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' /> */}
       <ScrollView minimumZoomScale={1} maximumZoomScale={3} showsVerticalScrollIndicator={false} bounces={false} style={styles.container}>
       <Grid>
-            {/* <Row style={{alignSelf: 'center'}}>
-                  <Tile
-                          imageSrc={Images.calendar}
-                          imageContainerStyle={styles.imageContainer} 
-                          //title="Eventos Especiales"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(20),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                          //caption=""
-                          //captionStyle={styles.h4}
-                          />
-                
-            </Row> */}
 
             {/* <Row style={styles.row}>
               <TouchableOpacity onPress={openScreen} style={styles.imageContainer}>
@@ -51,9 +32,7 @@ const EventsScreen = props => {
 
             <Row style={{alignSelf: 'center'}}>
               <View style={styles.imageContainer}>
-                    {/* <ScrollView minimumZoomScale={1} maximumZoomScale={3}> */}
-                        <Image source={Images.cafeconmipareja} style={styles.imageContainer} resizeMode='stretch' />  
-                    {/* </ScrollView>       */}
+                        <Image source={Images.movieLikeArrows} style={styles.imageContainer} resizeMode='stretch' />  
               </View>
             </Row>
      
