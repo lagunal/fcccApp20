@@ -1,0 +1,11 @@
+expo build:android -t app-bundle
+expo build:android --clear-credentials
+expo build:ios --clear-push-cert
+expo build:ios
+
+expo upload:android --key /Users/ludwinglaguna/Documents/APP-Distribute-Certificate-IOS-Google-Ludwing-Laguna/api-5133761909730498646-535937-237fdf62ce62.json --track production
+
+npm install -g expo-cli 
+
+path to file .json to authenticate in google play: (Google Service Account)
+/Users/ludwinglaguna/Documents/APP-Distribute-Certificate-IOS-Google-Ludwing-Laguna/api-5133761909730498646-535937-237fdf62ce62.json

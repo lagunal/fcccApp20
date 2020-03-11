@@ -32,8 +32,8 @@ const images = {
     bannerAyuno: require('../assets/images/FCCCBannerAyuno.png'),
     imagenAyuno1: require('../assets/images/ayuno1.jpg'),
     mensajesPastorales: require('../assets/images/MensajesPastorales.png'),
-    cafeconmipareja: require('../assets/images/cafeconmipareja.png'),
-    Diosessoberano: require('../assets/images/Diosessoberano.jpg'),
+    cafeconmipareja: require('../assets/images/Cafeconmipareja.png'),
+    Diosessoberano: require('../assets/images/DiosesSoberano.png'),
     seaLaLuz: require('../assets/images/seaLaLuz.png'),
     movieLikeArrows: require('../assets/images/movieLikeArrows.jpg'),
 }

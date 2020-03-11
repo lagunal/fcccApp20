@@ -30,11 +30,11 @@ const EventsScreen = props => {
               </TouchableOpacity>
             </Row> */}
 
-            <Row style={{alignSelf: 'center'}}>
+            {/* <Row style={{alignSelf: 'center'}}>
               <View style={styles.imageContainer}>
-                        <Image source={Images.movieLikeArrows} style={styles.imageContainer} resizeMode='stretch' />  
+                        <Image source={Images.cafeconmipareja} style={styles.imageContainer} resizeMode='stretch' />  
               </View>
-            </Row>
+            </Row> */}
      
         </Grid>
       </ScrollView>

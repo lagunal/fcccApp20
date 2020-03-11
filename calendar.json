@@ -1,66 +1,66 @@
 [ {
-    "info" : "Ayuno Min. Educacion y Lideres de Ministerio 9:00 am",
-    "dia" : "Sabado",
-    "fecha" : "1"
+    "info": "Servicio de Adoración 10:00 AM",
+    "dia": "Domingo",
+    "fecha": "1"
+  },{
+    "info": "Servicio de Oración 7:00 pm / E. Capacitacion 6:30 pm",
+    "dia": "Miercoles",
+    "fecha": "4"
+  },{
+    "info": "Escuela Bíblica. Dir. Familia Pastoral. 7:00 PM / Retiro de Damas 9:30PM - 12:00AM",
+    "dia": "Viernes",
+    "fecha": "6"
+  },{
+    "info": "Retiro de Damas 8:00AM - 3:00PM",
+    "dia": "Sabado",
+    "fecha": "7"
   },{
     "info" : "Servicio de Adoración 10:00 am",
     "dia" : "Domingo",
-    "fecha" : "2"
-  },{
-    "info" : "Servicio de Oración 7:00 PM / E. Capacitacion 6:30 pm",
-    "dia" : "Miercoles",
-    "fecha" : "5"
-  },{
-    "info" : "Escuela Bíblica. Dir. Ministerio de Damas. 7:00 pm",
-    "dia" : "Viernes",
-    "fecha" : "7"
-  },{
-    "info" : "Servicio de Adoración 10:00 am",
-    "dia" : "Domingo",
-    "fecha" : "9"
+    "fecha" : "8"
   },{
     "info" : "Cafe con mi pareja 6:45 - 8:00 pm",
     "dia" : "Lunes",
-    "fecha" : "10"
+    "fecha" : "9"
   },{
     "info" : "Servicio de Oración 7:00 pm / E. Capacitacion 6:30 pm",
     "dia" : "Miercoles",
-    "fecha" : "12"
+    "fecha" : "11"
   },{
-    "info" : "Escuela Bíblica. Dir. Ministerio de Caballeros. 7:00 PM",
+    "info" : "Escuela Bíblica. Dir. Familia Montalvo. 7:00 PM",
     "dia" : "Viernes",
-    "fecha" : "14"
-  },{
-    "info" : "Actividad de Caballeros",
-    "dia" : "Sabado",
-    "fecha" : "15"
+    "fecha" : "13"
   },{
     "info" : "Servicio de Adoración 10:00 AM",
     "dia" : "Domingo",
-    "fecha" : "16"
+    "fecha" : "15"
   },{
     "info" : "Servicio de Oración 7:00 pm / E. Capacitacion 6:30 pm",
     "dia" : "Miercoles",
-    "fecha" : "19"
+    "fecha" : "18"
   },{
-    "info" : "Escuela Bíblica. Dir. Familia Castro 7:00 PM",
+    "info" : "Escuela Bíblica. Dir. Familia Laguna 7:00 PM",
     "dia" : "Viernes",
+    "fecha" : "20"
+  },{
+    "info" : "Retiro de Niños 9:00AM - 12:00PM",
+    "dia" : "Sabado",
     "fecha" : "21"
   },{
-    "info" : "Servicio de Adoración 10:00 AM / Cierre de Serie - Min Jovenes 5pm - 7pm",
+    "info" : "Servicio de Adoración 10:00 AM",
     "dia" : "Domingo",
-    "fecha" : "23"
+    "fecha" : "22"
   },{
     "info" : "Servicio de Oración 7:00 pm / E. Capacitacion 6:30 pm",
     "dia" : "Miercoles",
-    "fecha" : "26"
+    "fecha" : "25"
   },{
-    "info" : "Escuela Bíblica. Dir. Ministerio de Jovenes 7:00 PM",
+    "info" : "Escuela Bíblica. Dir. Ministerio de Niños 7:00 PM / Actividad de Jovenes 8:45PM - 10:30PM",
     "dia" : "Viernes",
-    "fecha" : "28"
+    "fecha" : "27"
   },{
-    "info" : "Sabado de Pelicula Like Arrows 6:00 PM",
-    "dia" : "Sabado",
+    "info" : "Servicio de Adoración 10:00 AM",
+    "dia" : "Domingo",
     "fecha" : "29"
   } ]
   
