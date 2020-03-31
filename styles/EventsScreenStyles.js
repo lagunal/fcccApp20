@@ -97,7 +97,7 @@ export default StyleSheet.create({
   },
   imageAyunoContainer: {
     width: Metrics.wp(95), 
-    height: Metrics.hp(15),
+    height: Metrics.hp(13),
     //resizeMode: 'cover',
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,

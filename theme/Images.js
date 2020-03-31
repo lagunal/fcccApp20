@@ -36,6 +36,9 @@ const images = {
     Diosessoberano: require('../assets/images/DiosesSoberano.png'),
     seaLaLuz: require('../assets/images/seaLaLuz.png'),
     movieLikeArrows: require('../assets/images/movieLikeArrows.jpg'),
+    oradSinCesar: require('../assets/images/OradSinCesar.png'),
+    PazEnLaTormenta: require('../assets/images/Pazenlatormenta.png'),
+    DiosNoConocido: require('../assets/images/DiosNoConocido.jpeg') 
 }
 
 export default images;

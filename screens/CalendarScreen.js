@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, ScrollView, Text, Image } from 'react-native'
 import { Tile } from 'react-native-elements'
+import { Col, Row, Grid } from "react-native-easy-grid";
 
 import { Images, Metrics } from '../theme';
 import styles from '../styles/CalendarScreenStyles';
@@ -82,9 +83,9 @@ class CalendarScreen extends React.Component {
 
         <ScrollView style={styles.container}>
           <View style={styles.scrollContent}>
-                <View style={{alignSelf: 'center'}}>
+                {/* <View style={{alignSelf: 'center'}}>
                         <Tile
-                          imageSrc={Images.calendarScreen}
+                          imageSrc={Images.calendar}
                           imageContainerStyle={{width: Metrics.wp(95), height: Metrics.hp(30) }} 
                           title="Calendario Iglesia"
                           containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
@@ -97,7 +98,14 @@ class CalendarScreen extends React.Component {
                           titleStyle={styles.tileTextHomeOptions}
                           featured
                         />
-                </View>
+                </View> */}
+                {/* TOP IMAGE  */}
+                <Row style={{alignSelf: 'center'}}>
+                  <View style={styles.imageTop}>
+                      <Image source={Images.calendar} style={styles.imageTop} resizeMode='cover' />        
+                  </View>
+                </Row>
+
             <View>
               {this.renderCard(this.state.calendarData)}
             </View>
