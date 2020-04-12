@@ -83,22 +83,7 @@ class CalendarScreen extends React.Component {
 
         <ScrollView style={styles.container}>
           <View style={styles.scrollContent}>
-                {/* <View style={{alignSelf: 'center'}}>
-                        <Tile
-                          imageSrc={Images.calendar}
-                          imageContainerStyle={{width: Metrics.wp(95), height: Metrics.hp(30) }} 
-                          title="Calendario Iglesia"
-                          containerStyle={{width: Metrics.wp(95), height: Metrics.hp(30),
-                            borderBottomLeftRadius: 10,
-                            borderBottomRightRadius: 10,
-                            borderTopRightRadius: 10,
-                            borderTopLeftRadius: 10,
-                            overflow: 'hidden'
-                          }}
-                          titleStyle={styles.tileTextHomeOptions}
-                          featured
-                        />
-                </View> */}
+             
                 {/* TOP IMAGE  */}
                 <Row style={{alignSelf: 'center'}}>
                   <View style={styles.imageTop}>
@@ -106,9 +91,9 @@ class CalendarScreen extends React.Component {
                   </View>
                 </Row>
 
-            <View>
+            {/* <View>
               {this.renderCard(this.state.calendarData)}
-            </View>
+            </View> */}
           </View>
         </ScrollView>
       </View>

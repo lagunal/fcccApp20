@@ -20,6 +20,7 @@ const MessagesScreen = props => {
     {
       name: 'Dios es Soberano',
       image: Images.Diosessoberano,
+      date:'26-Ene-2020',
       function: openDetail1 = () => {
                     props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PredicaDiosEsSoberano.mp3?alt=media&token=5133570f-ad91-42e2-bd27-a1fcbb4a7227', 
                                                                         'nameMedia': 'Dios es Soberano' 
@@ -29,6 +30,7 @@ const MessagesScreen = props => {
     {
       name: 'Sea La Luz',
       image: Images.seaLaLuz,
+      date:'16-Feb-2020',
       function: openDetail2 = () => {
                     props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/seaLaLuz.mp3?alt=media&token=c79d4afd-87d5-4960-bc2a-354e85e3aff4', 
                                                                         'nameMedia': 'Sea La Luz' 
@@ -38,6 +40,7 @@ const MessagesScreen = props => {
     {
       name: 'Orad sin cesar',
       image: Images.oradSinCesar,
+      date:'15-Mar-2020',
       function: openDetail3 = () => {
         props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/OradSinCesar.mp3?alt=media&token=71faadfa-ece3-42ee-9a90-2f9faf88bbb1', 
                                                             'nameMedia': 'Orad sin cesar' 
@@ -47,6 +50,7 @@ const MessagesScreen = props => {
     {
       name: 'Paz en la tormenta',
       image: Images.PazEnLaTormenta,
+      date:'22-Mar-2020',
       function: openDetail4 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PazEnLaTormenta.mp3?alt=media&token=7bf2f61c-8298-4445-b0bd-82311fb4f64d', 
                                                                       'nameMedia': 'Paz en la tormenta' 
@@ -54,8 +58,9 @@ const MessagesScreen = props => {
                 }
     },
     {
-      name: 'Dios no conocido',
+      name: 'Al Dios no conocido',
       image: Images.DiosNoConocido,
+      date:'29-Mar-2020',
       function: openDetail5 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosNoConocido.mp3?alt=media&token=4bcd6e35-bc83-4427-b5f2-fef4ee5707ad', 
                                                                       'nameMedia': 'Dios no conocido' 
@@ -119,7 +124,7 @@ const MessagesScreen = props => {
                 key={i}
                 leftAvatar={{ source: (l.image) } }
                 title={l.name}
-                //subtitle={l.subtitle}
+                subtitle={l.date}
                 bottomDivider
                 onPress={l.function}
                 chevron

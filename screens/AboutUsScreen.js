@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, ScrollView, Text, Image } from 'react-native'
-
+import { View, ScrollView, Image } from 'react-native'
+import { Card, Button, Icon, Text } from 'react-native-elements'
 import { Images } from '../theme';
 import styles from '../styles/AboutUsScreenStyles';
 
@@ -13,6 +13,24 @@ const AboutUsScreen = () => {
        
         <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
           <View style={styles.scrollContent}>
+
+          {/* <Card
+            title='ACERCA DE NOSOTROS'
+            image={{ source: (Images.churchIcon) } }>
+            <Text style={{marginBottom: 10}}>
+                Dios nos ha provisto los recursos necesarios para hacer todo lo que EL nos ha llamado a hacer. Como líderes debemos cuidar de nuestras vidas espirituales: lo que leemos, lo que miramos, los hábitos que practicamos, las actitudes y conversaciones ya que a veces resulta fácil sucumbir bajo el bombardeo constante que hay en el mundo exterior. Para esto es importante y fundamental “caminar de la mano del Espíritu Santo”. Nuestra iglesia se ha forjado una misión y visión de acuerdo a las Sagradas Escrituras. Nuestra misión es RECONCILIAR y nuestra visión es PLANTAR. ¡Vamos a unirnos para llevar a cabo la labor que nuestro Dios nos ha encomendado! No olvidemos que trabajamos para el SEÑOR. 
+            </Text>
+            <Button
+              icon={<Icon name='code' color='#ffffff' />}
+              buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+              title='VIEW NOW' />
+          </Card> */}
+
+
+
+
+
+
             <View style={{alignItems: 'center', paddingTop: 60}}>
               <Image source={Images.churchIcon} style={styles.logo} />
               <Text style={styles.titleText}>ACERCA DE NOSOTROS</Text>
@@ -55,6 +73,10 @@ const AboutUsScreen = () => {
               {`\u2022`} Restaurar al caído, brindando la oportunidad de levantarse con nuestro servicio, amor y compasión. La Palabra de Dios es un vivo ejemplo de misericordia y amor; “y el que crea estar firme, mire que no caiga.”
               </Text>
               
+
+
+
+
             </View>
 
           </View>
