@@ -38,7 +38,10 @@ const images = {
     movieLikeArrows: require('../assets/images/movieLikeArrows.jpg'),
     oradSinCesar: require('../assets/images/OradSinCesar.png'),
     PazEnLaTormenta: require('../assets/images/Pazenlatormenta.png'),
-    DiosNoConocido: require('../assets/images/DiosNoConocido.jpeg') 
+    DiosNoConocido: require('../assets/images/DiosNoConocido.jpeg'),
+    Queso: require('../assets/images/Quienmoviomiqueso.jpeg'),
+    consumadoes: require('../assets/images/consumadoes.jpeg'),
+    jesuselcaminolaverdadylavida: require('../assets/images/jesuselcaminolaverdadylavida.jpeg')
 }
 
 export default images;

@@ -67,7 +67,36 @@ const MessagesScreen = props => {
                                                                     })
                 }
     },
-  
+    {
+      name: 'Quien movio mi queso',
+      image: Images.Queso,
+      date:'9-Abr-2020',
+      function: openDetail6 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/quienmoviomiqueso.mp3?alt=media&token=5aff7a6b-1931-40c8-b35d-e3cd3d8165b6', 
+                                                                      'nameMedia': 'Quien movio mi queso' 
+                                                                    })
+                }
+    },
+    {
+      name: 'Consumado es',
+      image: Images.consumadoes,
+      date:'10-Abr-2020',
+      function: openDetail7 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/consumadoes.mp3?alt=media&token=26167440-5e5b-4815-8b67-dc85fa0819f5', 
+                                                                      'nameMedia': 'Consumado es' 
+                                                                    })
+                }
+    },
+    {
+      name: 'Jesus el camino, la verdad y la vida',
+      image: Images.jesuselcaminolaverdadylavida,
+      date:'19-Abr-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/jesuselcaminolaverdadylavida.mp3?alt=media&token=f6b30b3b-a187-4630-9a66-a8c4df35bba0', 
+                                                                      'nameMedia': 'Jesus el camino, la verdad y la vida' 
+                                                                    })
+                }
+    }
   ]
 
   // async componentDidMount () {
