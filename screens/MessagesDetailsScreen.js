@@ -15,7 +15,7 @@ import {
 import { Asset } from "expo-asset";
 import { Audio, Video } from "expo-av";
 import * as Font from "expo-font";
-
+import { Button } from 'react-native-elements';
 import { MaterialIcons } from "@expo/vector-icons";
 
 class Icon {
@@ -139,7 +139,8 @@ export default class App extends React.Component {
     this.shouldPlayAtEndOfSeek = false;
     this.playbackInstance = null;
     this.mediaUri = props.navigation.getParam('uriMedia'); 
-    this.mediaName = props.navigation.getParam('nameMedia'); 
+    this.mediaName = props.navigation.getParam('nameMedia');
+    this.isVideo = props.navigation.getParam('video');
     this.state = {
       showVideo: false,
       playbackInstanceName: LOADING_STRING,
@@ -205,7 +206,7 @@ export default class App extends React.Component {
       // androidImplementation: 'MediaPlayer',
     };
 
-    if (PLAYLIST[this.index].isVideo) {
+    if (this.isVideo) {
       console.log(this._onPlaybackStatusUpdate);
       await this._video.loadAsync(source, initialStatus);
       // this._video.onPlaybackStatusUpdate(this._onPlaybackStatusUpdate);
@@ -242,7 +243,7 @@ export default class App extends React.Component {
       this.setState({
         //playbackInstanceName: PLAYLIST[this.index].name,
         playbackInstanceName: this.mediaName,
-        showVideo: PLAYLIST[this.index].isVideo,
+        showVideo: this.isVideo,
         isLoading: false
       });
     }
@@ -496,7 +497,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <View />
         <View style={styles.nameContainer}>
-          <Text style={[styles.text, { fontFamily: "cutive-mono-regular" }]}>
+          <Text style={[styles.text, { fontFamily: "open-sans" }]}>
             {this.state.playbackInstanceName}
           </Text>
         </View>
@@ -544,7 +545,7 @@ export default class App extends React.Component {
               style={[
                 styles.text,
                 styles.buffering,
-                { fontFamily: "cutive-mono-regular" }
+                { fontFamily: "open-sans" }
               ]}
             >
               {this.state.isBuffering ? BUFFERING_STRING : ""}
@@ -553,7 +554,7 @@ export default class App extends React.Component {
               style={[
                 styles.text,
                 styles.timestamp,
-                { fontFamily: "cutive-mono-regular" }
+                { fontFamily: "open-sans" }
               ]}
             >
               {this._getTimestamp()}
@@ -720,7 +721,7 @@ export default class App extends React.Component {
               ]}
             >
               <View />
-              <TouchableHighlight
+              {/* <TouchableHighlight
                 underlayColor={BACKGROUND_COLOR}
                 style={styles.wrapper}
                 onPress={this._onPosterPressed}
@@ -732,8 +733,8 @@ export default class App extends React.Component {
                     Poster: {this.state.poster ? "yes" : "no"}
                   </Text>
                 </View>
-              </TouchableHighlight>
-              <View />
+              </TouchableHighlight> */}
+              {/* <View /> */}
               <TouchableHighlight
                 underlayColor={BACKGROUND_COLOR}
                 style={styles.wrapper}
@@ -741,9 +742,9 @@ export default class App extends React.Component {
               >
                 <View style={styles.button}>
                   <Text
-                    style={[styles.text, { fontFamily: "cutive-mono-regular" }]}
+                    style={[styles.text, { fontFamily: "open-sans" }]}
                   >
-                    Fullscreen
+                    Open Fullscreen
                   </Text>
                 </View>
               </TouchableHighlight>
@@ -757,7 +758,7 @@ export default class App extends React.Component {
               ]}
             >
               <View />
-              <TouchableHighlight
+              {/* <TouchableHighlight
                 underlayColor={BACKGROUND_COLOR}
                 style={styles.wrapper}
                 onPress={this._onUseNativeControlsPressed}
@@ -770,7 +771,7 @@ export default class App extends React.Component {
                     {this.state.useNativeControls ? "yes" : "no"}
                   </Text>
                 </View>
-              </TouchableHighlight>
+              </TouchableHighlight> */}
               <View />
             </View>
           </View>
@@ -795,7 +796,7 @@ const styles = StyleSheet.create({
   },
   wrapper: {},
   nameContainer: {
-    height: FONT_SIZE
+    height: FONT_SIZE + 10
   },
   space: {
     height: FONT_SIZE
@@ -828,7 +829,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: FONT_SIZE,
-    minHeight: FONT_SIZE
+    minHeight: FONT_SIZE + 10
   },
   buffering: {
     textAlign: "left",
@@ -839,7 +840,7 @@ const styles = StyleSheet.create({
     paddingRight: 20
   },
   button: {
-    backgroundColor: BACKGROUND_COLOR
+    backgroundColor: BACKGROUND_COLOR,
   },
   buttonsContainerBase: {
     flex: 1,

@@ -3,7 +3,6 @@
     "name": "FCCC",
     "slug": "fcccApp20",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
     "platforms": [
       "ios",
       "android",
@@ -35,6 +34,7 @@
       },
       "versionCode": 5,
       "permissions": []
-    }
+    },
+    "description": ""
   }
 }

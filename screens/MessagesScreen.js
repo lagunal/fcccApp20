@@ -23,7 +23,8 @@ const MessagesScreen = props => {
       date:'26-Ene-2020',
       function: openDetail1 = () => {
                     props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PredicaDiosEsSoberano.mp3?alt=media&token=5133570f-ad91-42e2-bd27-a1fcbb4a7227', 
-                                                                        'nameMedia': 'Dios es Soberano' 
+                                                                        'nameMedia': 'Dios es Soberano',
+                                                                        'video': false 
                                                                       })
                   }
     },
@@ -33,7 +34,8 @@ const MessagesScreen = props => {
       date:'16-Feb-2020',
       function: openDetail2 = () => {
                     props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/seaLaLuz.mp3?alt=media&token=c79d4afd-87d5-4960-bc2a-354e85e3aff4', 
-                                                                        'nameMedia': 'Sea La Luz' 
+                                                                        'nameMedia': 'Sea La Luz',
+                                                                        'video': false 
                                                                       })
                   }
     },
@@ -43,7 +45,8 @@ const MessagesScreen = props => {
       date:'15-Mar-2020',
       function: openDetail3 = () => {
         props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/OradSinCesar.mp3?alt=media&token=71faadfa-ece3-42ee-9a90-2f9faf88bbb1', 
-                                                            'nameMedia': 'Orad sin cesar' 
+                                                            'nameMedia': 'Orad sin cesar',
+                                                            'video': false
                                                           })
       }
     },
@@ -53,7 +56,8 @@ const MessagesScreen = props => {
       date:'22-Mar-2020',
       function: openDetail4 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PazEnLaTormenta.mp3?alt=media&token=7bf2f61c-8298-4445-b0bd-82311fb4f64d', 
-                                                                      'nameMedia': 'Paz en la tormenta' 
+                                                                      'nameMedia': 'Paz en la tormenta',
+                                                                      'video': false
                                                                     })
                 }
     },
@@ -63,7 +67,8 @@ const MessagesScreen = props => {
       date:'29-Mar-2020',
       function: openDetail5 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosNoConocido.mp3?alt=media&token=4bcd6e35-bc83-4427-b5f2-fef4ee5707ad', 
-                                                                      'nameMedia': 'Dios no conocido' 
+                                                                      'nameMedia': 'Dios no conocido',
+                                                                      'video': false 
                                                                     })
                 }
     },
@@ -73,7 +78,8 @@ const MessagesScreen = props => {
       date:'9-Abr-2020',
       function: openDetail6 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/quienmoviomiqueso.mp3?alt=media&token=5aff7a6b-1931-40c8-b35d-e3cd3d8165b6', 
-                                                                      'nameMedia': 'Quien movio mi queso' 
+                                                                      'nameMedia': 'Quien movio mi queso',
+                                                                      'video': false
                                                                     })
                 }
     },
@@ -83,7 +89,8 @@ const MessagesScreen = props => {
       date:'10-Abr-2020',
       function: openDetail7 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/consumadoes.mp3?alt=media&token=26167440-5e5b-4815-8b67-dc85fa0819f5', 
-                                                                      'nameMedia': 'Consumado es' 
+                                                                      'nameMedia': 'Consumado es',
+                                                                      'video': false 
                                                                     })
                 }
     },
@@ -93,7 +100,19 @@ const MessagesScreen = props => {
       date:'19-Abr-2020',
       function: openDetail8 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/jesuselcaminolaverdadylavida.mp3?alt=media&token=f6b30b3b-a187-4630-9a66-a8c4df35bba0', 
-                                                                      'nameMedia': 'Jesus el camino, la verdad y la vida' 
+                                                                      'nameMedia': 'Jesus el camino, la verdad y la vida',
+                                                                      'video': false  
+                                                                    })
+                }
+    },
+    {
+      name: 'Analfabetismo Biblico',
+      image: Images.analfabetismoBiblico,
+      date:'24-Abr-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/Analfabetismo%20B%C3%ADblico.mp4?alt=media&token=d8e17ce5-52a3-47f6-9a2f-ebd556ed9feb', 
+                                                                      'nameMedia': 'Analfabetismo Biblico',
+                                                                      'video': true 
                                                                     })
                 }
     }
@@ -108,7 +127,7 @@ const MessagesScreen = props => {
   //   } catch (error) {
   //     // An error occurred!
   //   }
-  // }
+  // } 
 
     return (
       <View style={styles.mainContainer}>

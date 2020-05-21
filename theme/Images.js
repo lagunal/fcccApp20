@@ -41,7 +41,8 @@ const images = {
     DiosNoConocido: require('../assets/images/DiosNoConocido.jpeg'),
     Queso: require('../assets/images/Quienmoviomiqueso.jpeg'),
     consumadoes: require('../assets/images/consumadoes.jpeg'),
-    jesuselcaminolaverdadylavida: require('../assets/images/jesuselcaminolaverdadylavida.jpeg')
+    jesuselcaminolaverdadylavida: require('../assets/images/jesuselcaminolaverdadylavida.jpeg'),
+    analfabetismoBiblico: require('../assets/images/analfabetismoBiblico.png'),
 }
 
 export default images;
