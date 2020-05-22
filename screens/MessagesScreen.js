@@ -18,56 +18,67 @@ const MessagesScreen = props => {
 
   const list = [
     {
-      name: 'Dios es Soberano',
-      image: Images.Diosessoberano,
-      date:'26-Ene-2020',
-      function: openDetail1 = () => {
-                    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PredicaDiosEsSoberano.mp3?alt=media&token=5133570f-ad91-42e2-bd27-a1fcbb4a7227', 
-                                                                        'nameMedia': 'Dios es Soberano',
-                                                                        'video': false 
-                                                                      })
-                  }
-    },
-    {
-      name: 'Sea La Luz',
-      image: Images.seaLaLuz,
-      date:'16-Feb-2020',
-      function: openDetail2 = () => {
-                    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/seaLaLuz.mp3?alt=media&token=c79d4afd-87d5-4960-bc2a-354e85e3aff4', 
-                                                                        'nameMedia': 'Sea La Luz',
-                                                                        'video': false 
-                                                                      })
-                  }
-    },
-    {
-      name: 'Orad sin cesar',
-      image: Images.oradSinCesar,
-      date:'15-Mar-2020',
-      function: openDetail3 = () => {
-        props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/OradSinCesar.mp3?alt=media&token=71faadfa-ece3-42ee-9a90-2f9faf88bbb1', 
-                                                            'nameMedia': 'Orad sin cesar',
-                                                            'video': false
-                                                          })
-      }
-    },
-    {
-      name: 'Paz en la tormenta',
-      image: Images.PazEnLaTormenta,
-      date:'22-Mar-2020',
-      function: openDetail4 = () => {
-                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PazEnLaTormenta.mp3?alt=media&token=7bf2f61c-8298-4445-b0bd-82311fb4f64d', 
-                                                                      'nameMedia': 'Paz en la tormenta',
-                                                                      'video': false
+      name: 'Cuando Dios pelea nuestras batallas',
+      image: Images.DiosPeleaNuestrasBatallas,
+      date:'19-May-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosPeleaNuestrasBatallas.mp3?alt=media&token=0903429c-206e-446f-ad50-ec1d87e06eb4', 
+                                                                      'nameMedia': 'Cuando Dios pelea nuestras batallas',
+                                                                      'video': false 
                                                                     })
                 }
     },
     {
-      name: 'Al Dios no conocido',
-      image: Images.DiosNoConocido,
-      date:'29-Mar-2020',
-      function: openDetail5 = () => {
-                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosNoConocido.mp3?alt=media&token=4bcd6e35-bc83-4427-b5f2-fef4ee5707ad', 
-                                                                      'nameMedia': 'Dios no conocido',
+      name: 'Estad quietos y conoced que yo soy Dios',
+      image: Images.estadQuietos,
+      date:'18-May-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/estadQuietos.mp3?alt=media&token=205418b1-274f-4ddd-8ee5-352f61d63f90', 
+                                                                      'nameMedia': 'Estad quietos y conoced que yo soy Dios',
+                                                                      'video': false 
+                                                                    })
+                }
+    },
+    {
+      name: 'Recomendaciones para nuestro viaje espiritual',
+      image: Images.viajeEspiritual,
+      date:'26-Abr-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/RecomendacionesParaNuestroViajeEspiritual.mp4?alt=media&token=cb07a054-e25d-4e63-a4a8-527fc0a4a4e0', 
+                                                                      'nameMedia': 'Recomendaciones para nuestro viaje espiritual',
+                                                                      'video': true 
+                                                                    })
+                }
+    },
+    {
+      name: 'Analfabetismo Biblico',
+      image: Images.analfabetismoBiblico,
+      date:'24-Abr-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/Analfabetismo%20B%C3%ADblico.mp4?alt=media&token=d8e17ce5-52a3-47f6-9a2f-ebd556ed9feb', 
+                                                                      'nameMedia': 'Analfabetismo Biblico',
+                                                                      'video': true 
+                                                                    })
+                }
+    },
+    {
+      name: 'Jesus el camino, la verdad y la vida',
+      image: Images.jesuselcaminolaverdadylavida,
+      date:'19-Abr-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/jesuselcaminolaverdadylavida.mp3?alt=media&token=f6b30b3b-a187-4630-9a66-a8c4df35bba0', 
+                                                                      'nameMedia': 'Jesus el camino, la verdad y la vida',
+                                                                      'video': false  
+                                                                    })
+                }
+    },
+    {
+      name: 'Consumado es',
+      image: Images.consumadoes,
+      date:'10-Abr-2020',
+      function: openDetail7 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/consumadoes.mp3?alt=media&token=26167440-5e5b-4815-8b67-dc85fa0819f5', 
+                                                                      'nameMedia': 'Consumado es',
                                                                       'video': false 
                                                                     })
                 }
@@ -84,37 +95,59 @@ const MessagesScreen = props => {
                 }
     },
     {
-      name: 'Consumado es',
-      image: Images.consumadoes,
-      date:'10-Abr-2020',
-      function: openDetail7 = () => {
-                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/consumadoes.mp3?alt=media&token=26167440-5e5b-4815-8b67-dc85fa0819f5', 
-                                                                      'nameMedia': 'Consumado es',
+      name: 'Al Dios no conocido',
+      image: Images.DiosNoConocido,
+      date:'29-Mar-2020',
+      function: openDetail5 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosNoConocido.mp3?alt=media&token=4bcd6e35-bc83-4427-b5f2-fef4ee5707ad', 
+                                                                      'nameMedia': 'Dios no conocido',
                                                                       'video': false 
                                                                     })
                 }
     },
     {
-      name: 'Jesus el camino, la verdad y la vida',
-      image: Images.jesuselcaminolaverdadylavida,
-      date:'19-Abr-2020',
-      function: openDetail8 = () => {
-                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/jesuselcaminolaverdadylavida.mp3?alt=media&token=f6b30b3b-a187-4630-9a66-a8c4df35bba0', 
-                                                                      'nameMedia': 'Jesus el camino, la verdad y la vida',
-                                                                      'video': false  
+      name: 'Paz en la tormenta',
+      image: Images.PazEnLaTormenta,
+      date:'22-Mar-2020',
+      function: openDetail4 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PazEnLaTormenta.mp3?alt=media&token=7bf2f61c-8298-4445-b0bd-82311fb4f64d', 
+                                                                      'nameMedia': 'Paz en la tormenta',
+                                                                      'video': false
                                                                     })
                 }
     },
     {
-      name: 'Analfabetismo Biblico',
-      image: Images.analfabetismoBiblico,
-      date:'24-Abr-2020',
-      function: openDetail8 = () => {
-                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/Analfabetismo%20B%C3%ADblico.mp4?alt=media&token=d8e17ce5-52a3-47f6-9a2f-ebd556ed9feb', 
-                                                                      'nameMedia': 'Analfabetismo Biblico',
-                                                                      'video': true 
-                                                                    })
-                }
+      name: 'Orad sin cesar',
+      image: Images.oradSinCesar,
+      date:'15-Mar-2020',
+      function: openDetail3 = () => {
+        props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/OradSinCesar.mp3?alt=media&token=71faadfa-ece3-42ee-9a90-2f9faf88bbb1', 
+                                                            'nameMedia': 'Orad sin cesar',
+                                                            'video': false
+                                                          })
+      }
+    },
+    {
+      name: 'Sea La Luz',
+      image: Images.seaLaLuz,
+      date:'16-Feb-2020',
+      function: openDetail2 = () => {
+                    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/seaLaLuz.mp3?alt=media&token=c79d4afd-87d5-4960-bc2a-354e85e3aff4', 
+                                                                        'nameMedia': 'Sea La Luz',
+                                                                        'video': false 
+                                                                      })
+                  }
+    },
+    {
+      name: 'Dios es Soberano',
+      image: Images.Diosessoberano,
+      date:'26-Ene-2020',
+      function: openDetail1 = () => {
+                    props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/PredicaDiosEsSoberano.mp3?alt=media&token=5133570f-ad91-42e2-bd27-a1fcbb4a7227', 
+                                                                        'nameMedia': 'Dios es Soberano',
+                                                                        'video': false 
+                                                                      })
+                  }
     }
   ]
 

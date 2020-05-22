@@ -17,6 +17,7 @@ import { Audio, Video } from "expo-av";
 import * as Font from "expo-font";
 import { Button } from 'react-native-elements';
 import { MaterialIcons } from "@expo/vector-icons";
+import { Images, Metrics } from '../theme';
 
 class Icon {
   constructor(module, width, height) {
@@ -497,7 +498,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <View />
         <View style={styles.nameContainer}>
-          <Text style={[styles.text, { fontFamily: "open-sans" }]}>
+          <Text style={[styles.title, { fontFamily: "open-sans" }]}>
             {this.state.playbackInstanceName}
           </Text>
         </View>
@@ -830,6 +831,9 @@ const styles = StyleSheet.create({
   text: {
     fontSize: FONT_SIZE,
     minHeight: FONT_SIZE + 10
+  },
+  title: {
+    fontSize: Metrics.wp(4)
   },
   buffering: {
     textAlign: "left",

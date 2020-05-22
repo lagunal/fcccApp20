@@ -43,6 +43,9 @@ const images = {
     consumadoes: require('../assets/images/consumadoes.jpeg'),
     jesuselcaminolaverdadylavida: require('../assets/images/jesuselcaminolaverdadylavida.jpeg'),
     analfabetismoBiblico: require('../assets/images/analfabetismoBiblico.png'),
+    viajeEspiritual: require('../assets/images/tierra.jpeg'),
+    estadQuietos: require('../assets/images/EstadQuietos.png'),
+    DiosPeleaNuestrasBatallas: require('../assets/images/DiosPeleaNuestrasBatallas.png'),
 }
 
 export default images;
