@@ -18,13 +18,25 @@ const MessagesScreen = props => {
 
   const list = [
     {
+      name: 'Una Puerta Abierta!',
+      image: Images.unaPuertaAbierta,
+      date:'24-May-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/UnaPuertaABierta.mp4?alt=media&token=845f0f91-670a-4ca7-9a37-86442bb54561', 
+                                                                      'nameMedia': 'Una Puerta Abierta!',
+                                                                      'video': true ,
+                                                                    })
+                }
+    },
+    {
       name: 'Cuando Dios pelea nuestras batallas',
       image: Images.DiosPeleaNuestrasBatallas,
       date:'19-May-2020',
       function: openDetail8 = () => {
                   props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/DiosPeleaNuestrasBatallas.mp3?alt=media&token=0903429c-206e-446f-ad50-ec1d87e06eb4', 
                                                                       'nameMedia': 'Cuando Dios pelea nuestras batallas',
-                                                                      'video': false 
+                                                                      'video': false,
+                                                                     // 'src': Images.DiosPeleaNuestrasBatallas, 
                                                                     })
                 }
     },

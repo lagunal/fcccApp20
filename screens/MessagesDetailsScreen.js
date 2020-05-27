@@ -142,6 +142,7 @@ export default class App extends React.Component {
     this.mediaUri = props.navigation.getParam('uriMedia'); 
     this.mediaName = props.navigation.getParam('nameMedia');
     this.isVideo = props.navigation.getParam('video');
+   // this.imageuri = props.navigation.getParam('src');
     this.state = {
       showVideo: false,
       playbackInstanceName: LOADING_STRING,

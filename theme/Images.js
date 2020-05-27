@@ -46,6 +46,7 @@ const images = {
     viajeEspiritual: require('../assets/images/tierra.jpeg'),
     estadQuietos: require('../assets/images/EstadQuietos.png'),
     DiosPeleaNuestrasBatallas: require('../assets/images/DiosPeleaNuestrasBatallas.png'),
+    unaPuertaAbierta: require('../assets/images/unaPuertaAbierta.jpeg'),
 }
 
 export default images;
