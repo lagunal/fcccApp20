@@ -18,6 +18,17 @@ const MessagesScreen = props => {
 
   const list = [
     {
+      name: 'El Gozo del Senor es Nuestra Fortaleza',
+      image: Images.elGozoDelSenor,
+      date:'31-May-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/ElGozoDelSenor.mp4?alt=media&token=71dcf05a-5e23-43d5-ac48-a976836055d8', 
+                                                                      'nameMedia': 'El Gozo del Senor es Nuestra Fortaleza',
+                                                                      'video': true ,
+                                                                    })
+                }
+    },
+    {
       name: 'Una Puerta Abierta!',
       image: Images.unaPuertaAbierta,
       date:'24-May-2020',

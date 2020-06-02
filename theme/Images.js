@@ -47,6 +47,7 @@ const images = {
     estadQuietos: require('../assets/images/EstadQuietos.png'),
     DiosPeleaNuestrasBatallas: require('../assets/images/DiosPeleaNuestrasBatallas.png'),
     unaPuertaAbierta: require('../assets/images/unaPuertaAbierta.jpeg'),
+    elGozoDelSenor: require('../assets/images/ElGozoDelSenor.jpeg'),
 }
 
 export default images;
