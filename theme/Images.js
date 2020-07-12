@@ -48,6 +48,7 @@ const images = {
     DiosPeleaNuestrasBatallas: require('../assets/images/DiosPeleaNuestrasBatallas.png'),
     unaPuertaAbierta: require('../assets/images/unaPuertaAbierta.jpeg'),
     elGozoDelSenor: require('../assets/images/ElGozoDelSenor.jpeg'),
+    presenciaDeDios: require('../assets/images/PresenciadeDios.png'),
 }
 
 export default images;

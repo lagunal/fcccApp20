@@ -18,6 +18,17 @@ const MessagesScreen = props => {
 
   const list = [
     {
+      name: 'La imprescindible Presencia de Dios',
+      image: Images.presenciaDeDios,
+      date:'5-Jul-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/LaImprescindiblePresenciadeDios.mp4?alt=media&token=3f5be605-e2a5-40ed-bbde-727d3d3edba8', 
+                                                                      'nameMedia': 'La imprescindible Presencia de Dios',
+                                                                      'video': true ,
+                                                                    })
+                }
+    },
+    {
       name: 'El Gozo del Senor es Nuestra Fortaleza',
       image: Images.elGozoDelSenor,
       date:'31-May-2020',
