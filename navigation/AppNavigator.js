@@ -16,6 +16,7 @@ import GalleryDetailsScreen from '../screens/GalleryDetailsScreen';
 import EventsScreen from '../screens/EventsScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import MessagesDetailScreen from '../screens/MessagesDetailsScreen';
+import NotificationsScreen from '../screens/notifications';
 
 import { Colors } from '../theme';
 
@@ -32,6 +33,7 @@ const MainNavigator = createStackNavigator({
     HomeScreen: HomeScreen,
     AboutUsScreen: AboutUsScreen,
     FindUsScreen: FindUsScreen,
+    NotificationsScreen: NotificationsScreen,
     CalendarScreen: CalendarScreen,
     GalleryScreen: GalleryScreen,
     GalleryDetailsScreen: GalleryDetailsScreen

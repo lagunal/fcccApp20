@@ -28,6 +28,7 @@
       "supportsTablet": true
     },
     "android": {
+      "useNextNotificationsApi": true,
       "package": "org.reactjs.native.example.fcccApp2",
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo-transp.png"

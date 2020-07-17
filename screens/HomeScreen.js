@@ -15,7 +15,7 @@ const HomeScreen = props => {
   }
   
   openFindUs = () => {
-    props.navigation.navigate('FindUsScreen')
+    props.navigation.navigate('NotificationsScreen')
   }
   
   openPrayer = () => {
