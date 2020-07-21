@@ -3,12 +3,20 @@ import { View, ScrollView, Text, Image, Button } from 'react-native'
 
 import { Images } from '../theme';
 
-//import * as Notifications from 'expo-notifications';
+import * as Notifications from 'expo-notifications';
 import * as Permissions from 'expo-permissions';
-import { Notifications } from 'expo';
+
 
 // Styles
 import styles from '../styles/FindUsScreenStyles';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => {
+    return {
+      shouldShowAlert: true
+    };
+  }
+});
 
 const notifications = () => {
 
