@@ -96,7 +96,7 @@ const TabScreenConfig = {
     Events: { screen: EventsNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-calendar' size={25} color={tabInfo.tintColor} /> }
     }},
-    Predicas: { screen: MessagesNavigator, navigationOptions: { 
+    Mensajes: { screen: MessagesNavigator, navigationOptions: { 
         tabBarIcon: (tabInfo) => { return <Ionicons name='ios-mic' size={25} color={tabInfo.tintColor} /> }
     }}
 };

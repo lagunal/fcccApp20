@@ -18,6 +18,28 @@ const MessagesScreen = props => {
 
   const list = [
     {
+      name: 'No amen al mundo',
+      image: Images.presenciaDeDios,
+      date:'27-Sep-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/predica27Sep.mp4?alt=media&token=044ae333-af8b-400d-8fd8-810983f857d7', 
+                                                                      'nameMedia': 'No amen al mundo',
+                                                                      'video': true ,
+                                                                    })
+                }
+    },
+    {
+      name: '¿Es America una nacion Cristiana?',
+      image: Images.americaChristian,
+      date:'13-Sep-2020',
+      function: openDetail8 = () => {
+                  props.navigation.navigate('MessagesDetailScreen', {'uriMedia': 'https://firebasestorage.googleapis.com/v0/b/rn-fccc.appspot.com/o/predica13Sep.mp4?alt=media&token=b01078ac-05c4-4339-b92e-a7bf48e94bd6', 
+                                                                      'nameMedia': '¿Es America una nacion Cristiana?',
+                                                                      'video': true ,
+                                                                    })
+                }
+    },
+    {
       name: 'La imprescindible Presencia de Dios',
       image: Images.presenciaDeDios,
       date:'5-Jul-2020',

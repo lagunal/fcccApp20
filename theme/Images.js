@@ -49,6 +49,8 @@ const images = {
     unaPuertaAbierta: require('../assets/images/unaPuertaAbierta.jpeg'),
     elGozoDelSenor: require('../assets/images/ElGozoDelSenor.jpeg'),
     presenciaDeDios: require('../assets/images/PresenciadeDios.png'),
+    americaChristian: require('../assets/images/USA-flag-Christian.jpg'),
+
 }
 
 export default images;
